@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAMU IA Consulting — Conseil en Intelligence Artificielle & Automatisation</title>
+  <meta name="description" content="ZAMU IA Consulting accompagne les organisations dans leur évolution numérique grâce à l'intelligence artificielle, l'automatisation et des solutions numériques sur mesure.">
+  
+  <!-- Police Google : Inter (Standard shadcn/ui & modern tech SaaS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <!-- =========================================================================
+       NAVBAR (Hauteur 80px, conteneur max 1200px)
+       ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <!-- Logo ZAMU IA CONSULTING -->
+      <a href="#hero" class="brand-logo" aria-label="ZAMU IA Consulting - Accueil">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="8" fill="#171717" stroke="rgba(239, 239, 239, 0.15)"/>
+            <path d="M9 10H25L13 24H25" stroke="#3670FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="23" cy="11" r="2.5" fill="#F9D601"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">ZAMU IA</span>
+          <span class="logo-subtitle">CONSULTING</span>
+        </div>
+      </a>
+
+      <!-- Navigation Desktop (Centre) -->
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <ul class="nav-links-list">
+          <li><a href="#hero" class="nav-link active" aria-current="page">Accueil</a></li>
+          <li><a href="#a-propos" class="nav-link">À propos</a></li>
+          <li><a href="#expertises" class="nav-link">Expertises</a></li>
+          <li><a href="#demonstrations" class="nav-link">Démonstrations</a></li>
+          <li><a href="#methode" class="nav-link">Méthode</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions Desktop (Droite - Format shadcn/ui) -->
+      <div class="header-actions">
+        <a href="#demonstrations" class="btn btn-outline btn-sm">Nos démonstrations</a>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Discutons de votre projet</span>
+          <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Bouton Menu Mobile (Burger) -->
+      <button type="button" class="mobile-menu-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu de navigation">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Tiroir Mobile (Responsive 390px) -->
+    <div class="mobile-drawer" id="mobile-menu" hidden>
+      <div class="mobile-drawer-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link active" aria-current="page">Accueil</a></li>
+          <li><a href="#a-propos" class="mobile-nav-link">À propos</a></li>
+          <li><a href="#expertises" class="mobile-nav-link">Expertises</a></li>
+          <li><a href="#demonstrations" class="mobile-nav-link">Démonstrations</a></li>
+          <li><a href="#methode" class="mobile-nav-link">Méthode</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+          <a href="#contact" class="btn btn-primary btn-default btn-mobile-cta">
+            <span>Discutons de votre projet</span>
+            <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a href="#demonstrations" class="btn btn-outline btn-default btn-mobile-cta">Nos démonstrations</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION (Hauteur min 100vh)
+       ========================================================================= -->
+  <main id="main-content">
+    <section class="hero-section" id="hero">
+      
+      <!-- Halo Lumineux en Arc (Arrière-plan tech immersif) -->
+      <div class="hero-halo-stage" aria-hidden="true">
+        <!-- Diffusion d'ambiance bleue ultra-douce -->
+        <div class="halo-ambient-glow"></div>
+        
+        <!-- Arc Vectoriel avec liseré or et dégradé ultramarine -->
+        <svg class="arc-svg" viewBox="0 0 1440 640" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Liseré supérieur or lumineux -->
+            <linearGradient id="goldRimGradient" x1="200" y1="0" x2="1240" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3670FF" stop-opacity="0"/>
+              <stop offset="25%" stop-color="#3670FF" stop-opacity="0.8"/>
+              <stop offset="42%" stop-color="#F9D601" stop-opacity="0.95"/>
+              <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1"/>
+              <stop offset="58%" stop-color="#F9D601" stop-opacity="0.95"/>
+              <stop offset="75%" stop-color="#3670FF" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#3670FF" stop-opacity="0"/>
+            </linearGradient>
+
+            <!-- Dégradé interne bleu ultramarine vers noir profond -->
+            <radialGradient id="blueDomeGradient" cx="720" cy="180" r="620" fx="720" fy="140" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3670FF" stop-opacity="0.48"/>
+              <stop offset="35%" stop-color="#3670FF" stop-opacity="0.22"/>
+              <stop offset="70%" stop-color="#171717" stop-opacity="0.05"/>
+              <stop offset="100%" stop-color="#171717" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- Filtre de flou optique subtil -->
+            <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="16" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+            
+            <filter id="rimGlow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="8" result="glow"/>
+              <feMerge>
+                <feMergeNode in="glow"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Remplissage dôme atmosphérique -->
+          <path d="M-120 620 C240 160 1200 160 1560 620 Z" fill="url(#blueDomeGradient)" filter="url(#softGlow)"/>
+
+          <!-- Tracé liseré en arc avec crête dorée -->
+          <path d="M-100 600 C250 150 1190 150 1540 600" stroke="url(#goldRimGradient)" stroke-width="2.5" stroke-linecap="round" filter="url(#rimGlow)"/>
+        </svg>
+
+        <!-- Grille de perspective tech très estompée (ambiance studio) -->
+        <div class="tech-grid-overlay"></div>
+      </div>
+
+      <!-- Contenu Central Hero -->
+      <div class="hero-container">
+        
+        <!-- 1. Titre H1 centré (72px desktop / 40px mobile) -->
+        <h1 class="hero-title animate-fade-up" style="--stagger-delay: 150ms;">
+          Transformons vos idées en solutions concrètes.
+        </h1>
+
+        <!-- 2. Sous-titre centré (18px desktop / 16px mobile, max 620px) -->
+        <p class="hero-subtitle animate-fade-up" style="--stagger-delay: 250ms;">
+          ZAMU IA Consulting accompagne les organisations dans leur évolution numérique grâce à des solutions adaptées à leurs besoins.
+        </p>
+
+        <!-- 4. Deux boutons d'action centrés (Format shadcn/ui : primary & outline) -->
+        <div class="hero-cta-group animate-fade-up" style="--stagger-delay: 400ms;">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Discutons de votre projet</span>
+            <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <a href="#demonstrations" class="btn btn-outline btn-lg">
+            <span>Voir nos démonstrations</span>
+          </a>
+        </div>
+
+        <!-- 5. BANDE D'EXPERTISES (Barre de confiance sous le hero) -->
+        <div class="expertise-bar-wrapper animate-fade-up" style="--stagger-delay: 500ms;">
+          <div class="expertise-bar" role="region" aria-label="Nos domaines de compétences réelles">
+            
+            <!-- Expertise 1 : IA -->
+            <div class="expertise-item">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  <circle cx="12" cy="12" r="3.5" fill="#3670FF" fill-opacity="0.2"/>
+                </svg>
+              </div>
+              <span class="expertise-label">Intelligence artificielle</span>
+            </div>
+
+            <div class="expertise-divider" aria-hidden="true"></div>
+
+            <!-- Expertise 2 : Automatisation -->
+            <div class="expertise-item">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  <path d="M12 11h.01M12 15h.01"/>
+                </svg>
+              </div>
+              <span class="expertise-label">Automatisation des processus</span>
+            </div>
+
+            <div class="expertise-divider" aria-hidden="true"></div>
+
+            <!-- Expertise 3 : Solutions numériques -->
+            <div class="expertise-item">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                  <line x1="10" y1="19" x2="14" y2="5"/>
+                </svg>
+              </div>
+              <span class="expertise-label">Solutions numériques</span>
+            </div>
+
+            <div class="expertise-divider" aria-hidden="true"></div>
+
+            <!-- Expertise 4 : Conseil en transformation -->
+            <div class="expertise-item">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#3670FF" fill-opacity="0.3"/>
+                </svg>
+              </div>
+              <span class="expertise-label">Conseil en transformation</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2 : À PROPOS DE ZAMU IA CONSULTING
+         ======================================================================= -->
+    <section id="a-propos" class="site-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Bâtir la souveraineté technologique des entreprises
+          </h2>
+          <p class="section-subtitle">
+            ZAMU IA Consulting est une entreprise technologique hybride fondée au Congo-Brazzaville. Nous combinons conseil stratégique de pointe, automatisation opérationnelle et ingénierie logicielle pour résoudre des problèmes professionnels concrets et mesurables.
+          </p>
+        </div>
+
+        <!-- Grille Vision, Mission, Trajectoire -->
+        <div class="about-pillars-grid">
+          
+          <div class="about-card card-glow">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Notre Vision</h3>
+            <p class="about-card-text">
+              Démocratiser l'intelligence artificielle utile et l'automatisation dans les organisations d'Afrique francophone. Dépasser les effets de mode pour construire des leviers d'efficacité économique durables et rentables.
+            </p>
+          </div>
+
+          <div class="about-card card-glow">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Notre Mission</h3>
+            <p class="about-card-text">
+              Supprimer les goulots d'étranglement administratifs, fiabiliser le traitement des données et concevoir des solutions numériques parfaitement adaptées aux réalités terrain des PME et institutions.
+            </p>
+          </div>
+
+          <div class="about-card card-glow">
+            <div class="card-icon-wrapper" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="about-card-title">Notre Trajectoire</h3>
+            <div class="trajectory-steps">
+              <div class="trajectory-step">
+                <span class="step-label">Phase 1 —</span>
+                <span>Ancrage solide au Congo (Brazzaville & Pointe-Noire)</span>
+              </div>
+              <div class="trajectory-step">
+                <span class="step-label">Phase 2 —</span>
+                <span>Déploiement d'offres reproductibles en Afrique Centrale & de l'Ouest</span>
+              </div>
+              <div class="trajectory-step">
+                <span class="step-label">Phase 3 —</span>
+                <span>Rayonnement international via prestations d'ingénierie & produits SaaS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4 Valeurs fondamentales -->
+        <div class="values-wrapper">
+          <h3 class="values-heading">Nos Quatre Valeurs Fondamentales</h3>
+          <div class="values-grid">
+            
+            <div class="value-item">
+              <span class="value-num" aria-hidden="true">01.</span>
+              <div class="value-content">
+                <h4 class="value-title">Innovation Pragmatique</h4>
+                <p class="value-desc">Nous appliquons les technologies de pointe uniquement lorsqu'elles génèrent une valeur ajoutée opérationnelle nette.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <span class="value-num" aria-hidden="true">02.</span>
+              <div class="value-content">
+                <h4 class="value-title">Fiabilité & Rigueur</h4>
+                <p class="value-desc">Des architectures stables, des protocoles de sécurité stricts et des processus vérifiables à chaque étape.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <span class="value-num" aria-hidden="true">03.</span>
+              <div class="value-content">
+                <h4 class="value-title">Simplicité d'Adoption</h4>
+                <p class="value-desc">Pas de systèmes complexes inutiles : des outils intuitifs que vos équipes s'approprient en quelques heures.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <span class="value-num" aria-hidden="true">04.</span>
+              <div class="value-content">
+                <h4 class="value-title">Impact Mesurable</h4>
+                <p class="value-desc">Chaque mission est adossée à des indicateurs clés : heures économisées, fiabilité des données et retour sur investissement.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3 : NOS DOMAINES D'EXPERTISE (LES 4 PÔLES D'ACTIVITÉS)
+         ======================================================================= -->
+    <section id="expertises" class="site-section bg-surface-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Quatre pôles d'excellence structurés pour votre impact
+          </h2>
+          <p class="section-subtitle">
+            Une synergie complète : du diagnostic stratégique de maturité jusqu'au déploiement d'automatisations fiables et d'outils logiciels sur mesure.
+          </p>
+        </div>
+
+        <div class="poles-grid">
+          
+          <!-- Pôle 1: ZAMU AI Advisory -->
+          <article class="pole-card card-glow">
+            <div class="pole-header">
+              <div class="pole-icon-box advisory" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <span class="pole-num">Pôle 01</span>
+            </div>
+            <h3 class="pole-name">ZAMU AI Advisory</h3>
+            <p class="pole-role">Conseil & Stratégie en Intelligence Artificielle</p>
+            <p class="pole-desc">
+              Accompagnement des dirigeants et décideurs pour identifier avec précision les opportunités de rentabilité et cadrer les investissements numériques sans risque.
+            </p>
+            <ul class="pole-features-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Diagnostic de maturité numérique & éligibilité IA</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Identification et hiérarchisation des cas d'usage ROIstes</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Feuille de route de transformation et choix d'outils</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Gouvernance, sécurité et protection des données</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pôle 2: ZAMU Automation -->
+          <article class="pole-card card-glow">
+            <div class="pole-header">
+              <div class="pole-icon-box automation" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  <path d="M12 11h.01M12 15h.01"/>
+                </svg>
+              </div>
+              <span class="pole-num">Pôle 02</span>
+            </div>
+            <h3 class="pole-name">ZAMU Automation</h3>
+            <p class="pole-role">Automatisation des Processus Métiers</p>
+            <p class="pole-desc">
+              Élimination des tâches manuelles répétitives pour libérer le potentiel humain et accélérer les cycles de gestion au quotidien.
+            </p>
+            <ul class="pole-features-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Assistants IA & traitement intelligent de documents (factures, bons)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Automatisation omnicanale du suivi commercial (WhatsApp & Email)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Génération automatique de devis, quittances et rapports</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Intégration d'API et synchronisation fluide de vos logiciels actuels</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pôle 3: ZAMU Digital Solutions -->
+          <article class="pole-card card-glow">
+            <div class="pole-header">
+              <div class="pole-icon-box digital" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                  <line x1="10" y1="19" x2="14" y2="5"/>
+                </svg>
+              </div>
+              <span class="pole-num">Pôle 03</span>
+            </div>
+            <h3 class="pole-name">ZAMU Digital Solutions</h3>
+            <p class="pole-role">Ingénierie Logicielle & Solutions Sur Mesure</p>
+            <p class="pole-desc">
+              Conception d'outils numériques modernes, réactifs et sécurisés, répondant strictement aux exigences de votre activité.
+            </p>
+            <ul class="pole-features-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Développement d'applications web métiers et portails clients</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Tableaux de bord de pilotage d'activité et Business Intelligence</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Modernisation et interfaçage de systèmes existants (ERP, CRM)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Hébergement haute disponibilité, maintenance & support continu</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Pôle 4: ZAMU Ventures -->
+          <article class="pole-card card-glow">
+            <div class="pole-header">
+              <div class="pole-icon-box ventures" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v8"/>
+                  <path d="m4.93 10.93 1.41 1.41"/>
+                  <path d="M2 18h2"/>
+                  <path d="M20 18h2"/>
+                  <path d="m19.07 10.93-1.41 1.41"/>
+                  <path d="M22 22H2"/>
+                  <path d="m16 6-4-4-4 4"/>
+                  <path d="M16 18a4 4 0 0 0-8 0"/>
+                </svg>
+              </div>
+              <span class="pole-num">Pôle 04</span>
+            </div>
+            <h3 class="pole-name">ZAMU Ventures</h3>
+            <p class="pole-role">Laboratoire R&D & Produits Propriétaires</p>
+            <p class="pole-desc">
+              Capitalisation sur les problématiques récurrentes observées sur le terrain pour concevoir des micro-SaaS verticaux et des actifs technologiques pérennes.
+            </p>
+            <ul class="pole-features-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Détection des besoins communs aux entreprises africaines</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Prototypage agile et banc d'essai technologique</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Développement de modules SaaS réutilisables</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Partenariats de co-innovation & licences logicielles</span>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4 : NOS DÉMONSTRATIONS & PROTOTYPES
+         ======================================================================= -->
+    <section id="demonstrations" class="site-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Démonstrations & prototypes fonctionnels
+          </h2>
+          <p class="section-subtitle">
+            Plutôt que des promesses abstraites, nous concevons des prototypes internes pour prouver la viabilité et la puissance de nos solutions avant tout déploiement en production.
+          </p>
+        </div>
+
+        <!-- Filtres par catégorie -->
+        <div class="prototype-filters" role="tablist" aria-label="Filtrer les prototypes">
+          <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">Tous les prototypes</button>
+          <button type="button" class="filter-tab" data-filter="ia" role="tab" aria-selected="false">IA & Documents</button>
+          <button type="button" class="filter-tab" data-filter="automation" role="tab" aria-selected="false">Automatisation</button>
+          <button type="button" class="filter-tab" data-filter="saas" role="tab" aria-selected="false">Solutions Métiers</button>
+        </div>
+
+        <!-- Grille des prototypes -->
+        <div class="prototypes-grid" id="prototypes-grid">
+          
+          <!-- Prototype 1 : DocuMind IA -->
+          <div class="prototype-card card-glow" data-category="ia">
+            <div class="prototype-card-header">
+              <div class="prototype-meta">
+                <span class="prototype-status">Prototype interne</span>
+                <span class="meta-sep" aria-hidden="true">•</span>
+                <span class="prototype-category">IA & OCR</span>
+              </div>
+              <h3 class="prototype-title">DocuMind IA</h3>
+              <p class="prototype-summary">
+                Système d'extraction instantanée de données sur factures, bons de commande et reçus avec structuration JSON automatisée.
+              </p>
+            </div>
+
+            <!-- Aperçu UI simulé -->
+            <div class="ui-mockup-frame">
+              <div class="mockup-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-url">documind.zamu.internal / parser</span>
+              </div>
+              <div class="mockup-content doc-extract-preview">
+                <div class="preview-metric-row">
+                  <span class="metric-label">Taux d'exactitude OCR</span>
+                  <span class="metric-value">99.4%</span>
+                </div>
+                <div class="extracted-json-preview">
+                  <code>{
+  "fournisseur": "SOCIÉTÉ CONGOLAISE DE DISTRIBUTION",
+  "facture_no": "FA-2026-0894",
+  "montant_ht": "4 850 000 FCFA",
+  "tva_18": "873 000 FCFA",
+  "total_ttc": "5 723 000 FCFA",
+  "statut": "EXTRACTION_VALIDÉE"
+}</code>
+                </div>
+              </div>
+            </div>
+
+            <div class="prototype-card-footer">
+              <div class="tech-tags">
+                <span>Vision Multimodale</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>JSON Schema</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Python Fast-API</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-demo="documind">
+                <span>Tester la simulation</span>
+                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Prototype 2 : FlowSync CRM -->
+          <div class="prototype-card card-glow" data-category="automation">
+            <div class="prototype-card-header">
+              <div class="prototype-meta">
+                <span class="prototype-status">Démonstration active</span>
+                <span class="meta-sep" aria-hidden="true">•</span>
+                <span class="prototype-category">Automatisation</span>
+              </div>
+              <h3 class="prototype-title">FlowSync WhatsApp CRM</h3>
+              <p class="prototype-summary">
+                Pipeline automatisé de relance des factures et confirmation de commandes via l'API officielle WhatsApp Business.
+              </p>
+            </div>
+
+            <!-- Aperçu UI simulé -->
+            <div class="ui-mockup-frame">
+              <div class="mockup-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-url">flowsync.zamu.internal / whatsapp-pipeline</span>
+              </div>
+              <div class="mockup-content chat-flow-preview">
+                <div class="chat-bubble bot">
+                  <span class="chat-sender">Bot ZAMU • 10:14</span>
+                  <p>Bonjour M. Kouka, votre échéance pour la facture #FA-104 arrive à terme dans 48h. Souhaitez-vous payer par Airtel Money ou virement ?</p>
+                </div>
+                <div class="chat-bubble user">
+                  <span class="chat-sender">Client • 10:15</span>
+                  <p>Bonjour, envoyez-moi le lien de paiement direct Mobile Money svp.</p>
+                </div>
+                <div class="chat-status-indicator">
+                  <span class="status-dot-active"></span>
+                  <span>Webhook déclenché : Génération lien sécurisé</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="prototype-card-footer">
+              <div class="tech-tags">
+                <span>WhatsApp Cloud API</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Webhooks</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Node.js</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-demo="flowsync">
+                <span>Tester le flux</span>
+                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Prototype 3 : PulseMetrics -->
+          <div class="prototype-card card-glow" data-category="saas">
+            <div class="prototype-card-header">
+              <div class="prototype-meta">
+                <span class="prototype-status">Prototype interne</span>
+                <span class="meta-sep" aria-hidden="true">•</span>
+                <span class="prototype-category">Solutions Métiers</span>
+              </div>
+              <h3 class="prototype-title">PulseMetrics Dashboard</h3>
+              <p class="prototype-summary">
+                Tableau de bord financier pour dirigeants de PME avec analyse prédictive de trésorerie à 30, 60 et 90 jours.
+              </p>
+            </div>
+
+            <!-- Aperçu UI simulé -->
+            <div class="ui-mockup-frame">
+              <div class="mockup-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-url">pulse.zamu.internal / analytics</span>
+              </div>
+              <div class="mockup-content dashboard-kpi-preview">
+                <div class="kpi-mini-grid">
+                  <div class="mini-kpi">
+                    <span class="kpi-title">Trésorerie Prévisionnelle</span>
+                    <span class="kpi-num">38.4M FCFA</span>
+                    <span class="kpi-trend positive">+14.2% vs M-1</span>
+                  </div>
+                  <div class="mini-kpi">
+                    <span class="kpi-title">Délai Moyen Paiement</span>
+                    <span class="kpi-num">18 Jours</span>
+                    <span class="kpi-trend positive">-7j après relances</span>
+                  </div>
+                </div>
+                <div class="simulated-bar-chart">
+                  <div class="chart-col" style="height: 45%;"><span>Jan</span></div>
+                  <div class="chart-col" style="height: 60%;"><span>Fév</span></div>
+                  <div class="chart-col" style="height: 52%;"><span>Mar</span></div>
+                  <div class="chart-col" style="height: 85%;"><span>Avr</span></div>
+                  <div class="chart-col active-col" style="height: 95%;"><span>Mai (Prév)</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="prototype-card-footer">
+              <div class="tech-tags">
+                <span>Analytics SaaS</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>PostgreSQL</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Modèles ARIMA</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-demo="pulse">
+                <span>Voir la simulation</span>
+                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Prototype 4 : StockPilot AI -->
+          <div class="prototype-card card-glow" data-category="saas">
+            <div class="prototype-card-header">
+              <div class="prototype-meta">
+                <span class="prototype-status">Maquette validée</span>
+                <span class="meta-sep" aria-hidden="true">•</span>
+                <span class="prototype-category">Solutions Métiers</span>
+              </div>
+              <h3 class="prototype-title">StockPilot AI</h3>
+              <p class="prototype-summary">
+                Moteur de prévision des ruptures de stock et calcul automatique des seuils de réapprovisionnement pour commerces & grossistes.
+              </p>
+            </div>
+
+            <!-- Aperçu UI simulé -->
+            <div class="ui-mockup-frame">
+              <div class="mockup-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mockup-url">stockpilot.zamu.internal / inventory</span>
+              </div>
+              <div class="mockup-content stock-alerts-preview">
+                <div class="stock-item-row alert-warning">
+                  <span class="stock-name">Ciment Super CPJ 35</span>
+                  <span class="stock-count">Stock : 42 sacs (Critique)</span>
+                  <span class="stock-status-text alert">Alerte IA : Réapprovisionner</span>
+                </div>
+                <div class="stock-item-row alert-ok">
+                  <span class="stock-name">Fers à béton Ø 10mm</span>
+                  <span class="stock-count">Stock : 320 barres</span>
+                  <span class="stock-status-text ok">Optimal (Couverture 28j)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="prototype-card-footer">
+              <div class="tech-tags">
+                <span>Algorithmes Prédictifs</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Logistique & Stocks</span>
+                <span class="tag-sep" aria-hidden="true">•</span>
+                <span>Alerting</span>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm btn-open-demo" data-demo="stockpilot">
+                <span>Tester le simulateur</span>
+                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5 : NOTRE MÉTHODE DE TRAVAIL
+         ======================================================================= -->
+    <section id="methode" class="site-section bg-surface-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Une démarche rigoureuse en quatre étapes
+          </h2>
+          <p class="section-subtitle">
+            Chaque mission repose sur un processus transparent sans surprise technique ou budgétaire, conçu pour sécuriser votre investissement à chaque jalon.
+          </p>
+        </div>
+
+        <div class="steps-flow-grid">
+          
+          <div class="step-card card-glow">
+            <div class="step-num-watermark" aria-hidden="true">01</div>
+            <span class="step-count">Étape 01</span>
+            <h3 class="step-title">Comprendre & Auditer</h3>
+            <p class="step-desc">
+              Immersion dans vos opérations quotidiennes à Brazzaville ou à distance. Identification des tâches répétitives, des pertes de temps et des opportunités d'automatisation prioritaires.
+            </p>
+            <div class="step-deliverable">
+              <span class="deliverable-tag">Livrable clé :</span>
+              <span class="deliverable-text">Audit d'opportunités & cartographie des processus</span>
+            </div>
+          </div>
+
+          <div class="step-card card-glow">
+            <div class="step-num-watermark" aria-hidden="true">02</div>
+            <span class="step-count">Étape 02</span>
+            <h3 class="step-title">Analyser & Chiffrer</h3>
+            <p class="step-desc">
+              Sélection de l'architecture la plus simple et efficace. Évaluation transparente des coûts, du délai de mise en œuvre et estimation du retour sur investissement opérationnel.
+            </p>
+            <div class="step-deliverable">
+              <span class="deliverable-tag">Livrable clé :</span>
+              <span class="deliverable-text">Feuille de route technique & devis forfaitaire détaillé</span>
+            </div>
+          </div>
+
+          <div class="step-card card-glow">
+            <div class="step-num-watermark" aria-hidden="true">03</div>
+            <span class="step-count">Étape 03</span>
+            <h3 class="step-title">Concevoir & Tester</h3>
+            <p class="step-desc">
+              Développement agile du prototype ou de l'automatisation. Tests rigoureux en environnement sécurisé avec vos référents métiers pour valider chaque fonctionnalité.
+            </p>
+            <div class="step-deliverable">
+              <span class="deliverable-tag">Livrable clé :</span>
+              <span class="deliverable-text">Prototype fonctionnel validé par vos équipes</span>
+            </div>
+          </div>
+
+          <div class="step-card card-glow">
+            <div class="step-num-watermark" aria-hidden="true">04</div>
+            <span class="step-count">Étape 04</span>
+            <h3 class="step-title">Déployer & Accompagner</h3>
+            <p class="step-desc">
+              Mise en production sécurisée, intégration avec vos outils quotidiens et formation approfondie de vos collaborateurs pour garantir une adoption totale et autonome.
+            </p>
+            <div class="step-deliverable">
+              <span class="deliverable-tag">Livrable clé :</span>
+              <span class="deliverable-text">Solution en production, guides & support opérationnel</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 6 : À QUI NOUS NOUS ADRESSONS
+         ======================================================================= -->
+    <section id="clients" class="site-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Des solutions conçues pour vos réalités d'entreprise
+          </h2>
+          <p class="section-subtitle">
+            Nous adaptons nos interventions aux contraintes et aux objectifs spécifiques de chaque type d'organisation.
+          </p>
+        </div>
+
+        <div class="segments-grid">
+          
+          <div class="segment-card card-glow">
+            <div class="segment-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="segment-name">PME & Commerces</h3>
+            <p class="segment-targets">Distributeurs, grossistes, sociétés de transport, logistique & prestataires de services.</p>
+            <div class="segment-needs">
+              <span class="needs-title">Besoins clés résolus :</span>
+              <ul class="needs-list">
+                <li>Automatisation de la facturation et des relances clients</li>
+                <li>Digitalisation des registres de stocks et commandes</li>
+                <li>Rapports de gestion sans ressaisies fastidieuses sur papier</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="segment-card card-glow">
+            <div class="segment-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="segment-name">Grandes Entreprises</h3>
+            <p class="segment-targets">Sociétés industrielles, télécoms, institutions bancaires et organisations régionales.</p>
+            <div class="segment-needs">
+              <span class="needs-title">Besoins clés résolus :</span>
+              <ul class="needs-list">
+                <li>Audit de maturité IA & gouvernance sécurisée des données</li>
+                <li>Intégration d'assistants IA souverains sur bases internes</li>
+                <li>Formation des comités de direction et des équipes opérationnelles</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="segment-card card-glow">
+            <div class="segment-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <h3 class="segment-name">Écoles & Centres de Formation</h3>
+            <p class="segment-targets">Universités privées, instituts professionnels, centres de formation technique.</p>
+            <div class="segment-needs">
+              <span class="needs-title">Besoins clés résolus :</span>
+              <ul class="needs-list">
+                <li>Automatisation des inscriptions et attestations</li>
+                <li>Portails d'assistance intelligents pour les étudiants</li>
+                <li>Numérisation des archives et suivi des scolarités</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="segment-card card-glow">
+            <div class="segment-icon-box" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="segment-name">Entrepreneurs & Startups</h3>
+            <p class="segment-targets">Créateurs d'entreprises innovantes, porteurs de projets SaaS et pionniers du digital.</p>
+            <div class="segment-needs">
+              <span class="needs-title">Besoins clés résolus :</span>
+              <ul class="needs-list">
+                <li>Prototypage ultra-rapide de MVP fonctionnels</li>
+                <li>Architecture logicielle robuste et économique dès le jour 1</li>
+                <li>Intégration d'APIs d'IA sans dérive de facturation cloud</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 7 : POURQUOI CHOISIR ZAMU IA CONSULTING ?
+         ======================================================================= -->
+    <section id="pourquoi-nous" class="site-section bg-surface-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Pourquoi choisir ZAMU IA Consulting ?
+          </h2>
+          <p class="section-subtitle">
+            Nous fondons notre crédibilité sur l'intégrité intellectuelle, la clarté technique et l'impact opérationnel direct.
+          </p>
+        </div>
+
+        <div class="commitments-grid">
+          
+          <div class="commitment-card card-glow">
+            <div class="commitment-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="commitment-title">L'IA au service du ROI, pas du buzz</h3>
+            <p class="commitment-text">
+              Nous refusons de survendre des technologies complexes si une automatisation simple ou un outil métier classique résout 90% de votre problème pour un coût nettement inférieur. Chaque solution doit être financièrement justifiable.
+            </p>
+          </div>
+
+          <div class="commitment-card card-glow">
+            <div class="commitment-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="commitment-title">Ancrage local & compréhension du terrain</h3>
+            <p class="commitment-text">
+              Basés à Brazzaville, nous appréhendons parfaitement les réalités d'infrastructure, de connectivité, de bande passante et les canaux d'usage locaux (WhatsApp, Mobile Money, réalités administratives congolaises).
+            </p>
+          </div>
+
+          <div class="commitment-card card-glow">
+            <div class="commitment-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3 class="commitment-title">Indépendance & Propriété de vos actifs</h3>
+            <p class="commitment-text">
+              Pas de dépendance fermée : nous construisons sur des technologies ouvertes et éprouvées. Vos données d'entreprise restent strictement confidentielles et vous conservez l'entière propriété de vos outils et flux développés.
+            </p>
+          </div>
+
+          <div class="commitment-card card-glow">
+            <div class="commitment-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="commitment-title">Pédagogie & Transfert d'autonomie</h3>
+            <p class="commitment-text">
+              Notre réussite se mesure à l'autonomie de vos équipes. Nous assurons un accompagnement bienveillant, des formations pratiques sans jargon et une documentation limpide pour faire de vos collaborateurs des utilisateurs confiants.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 8 : QUESTIONS FRÉQUENTES (FAQ ACCORDÉON)
+         ======================================================================= -->
+    <section id="faq" class="site-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Questions fréquemment posées
+          </h2>
+          <p class="section-subtitle">
+            Tout ce que vous souhaitez savoir avant d'engager votre premier échange avec notre cabinet.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrapper" id="faq-accordion">
+          
+          <div class="faq-item active">
+            <button type="button" class="faq-question" aria-expanded="true" aria-controls="faq-ans-1">
+              <span>À qui s'adressent vos solutions ? Faut-il déjà une équipe informatique interne ?</span>
+              <span class="faq-icon" aria-hidden="true">−</span>
+            </button>
+            <div class="faq-answer" id="faq-ans-1">
+              <div class="faq-answer-inner">
+                <p>
+                  Non, aucun prérequis technique n'est nécessaire. Nous accompagnons aussi bien des dirigeants de PME ou commerçants sans aucun service informatique que des directions d'entreprises structurées. Nous prenons en charge l'ensemble de la complexité technique et traduisons chaque solution en bénéfices d'usage simples.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-ans-2">
+              <span>Peut-on démarrer avec un budget mesuré ou un projet pilote ciblé ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-ans-2" hidden>
+              <div class="faq-answer-inner">
+                <p>
+                  Absolument. C'est même notre recommandation formelle pour tout premier partenariat. Nous débutons généralement par une mission pilote courte (POC) de 2 à 3 semaines sur un seul processus (par exemple : automatiser les relances clients par WhatsApp ou extraire automatiquement vos factures fournisseurs). Cela vous permet de valider le retour sur investissement avant tout engagement d'envergure.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-ans-3">
+              <span>Comment garantissez-vous la sécurité et la confidentialité de nos données ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-ans-3" hidden>
+              <div class="faq-answer-inner">
+                <p>
+                  La confidentialité est un impératif non négociable. Nous signons systématiquement un accord de confidentialité (NDA) avant tout examen de vos processus. De plus, nous déployons des architectures cloisonnées où vos données sensibles ne sont jamais utilisées pour entraîner des modèles publics d'IA.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-ans-4">
+              <span>Quels sont les délais habituels pour observer les premiers résultats ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-ans-4" hidden>
+              <div class="faq-answer-inner">
+                <p>
+                  Pour un projet d'automatisation de processus ou d'assistant documentaire, les premiers résultats opérationnels sont généralement mesurables entre 10 et 20 jours ouvrés. Pour une solution logicielle sur-mesure complète, un prototype fonctionnel est soumis à vos équipes dès la fin de la 2e semaine de développement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-ans-5">
+              <span>Comment se déroule notre premier échange ?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-ans-5" hidden>
+              <div class="faq-answer-inner">
+                <p>
+                  Le premier échange dure de 30 à 45 minutes, en présentiel à Brazzaville ou en visioconférence. Il est 100% gratuit et sans aucun engagement. Nous analysons vos points de friction actuels et nous vous disons en toute honnêteté si nos expertises sont adaptées ou non à votre situation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 9 : CONTACT ET DEMANDE DE CONSULTATION
+         ======================================================================= -->
+    <section id="contact" class="site-section bg-surface-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <h2 class="section-title">
+            Parlons de vos enjeux opérationnels
+          </h2>
+          <p class="section-subtitle">
+            Brazzaville & Pointe-Noire — Échange préliminaire gratuit de 30 minutes pour évaluer vos opportunités d'automatisation et de transformation numérique.
+          </p>
+        </div>
+
+        <div class="contact-dual-layout">
+          
+          <!-- Colonne Gauche : Coordonnées directes & garanties -->
+          <div class="contact-info-col">
+            <div class="contact-card card-glow">
+              <h3 class="contact-card-title">Canaux Directs</h3>
+              <p class="contact-card-desc">
+                Vous préférez un échange immédiat ? Nos équipes d'ingénierie conseil sont directement joignables :
+              </p>
+
+              <div class="contact-channels-list">
+                
+                <a href="https://wa.me/242060000000?text=Bonjour%20ZAMU%20IA%20Consulting,%20je%20souhaite%20discuter%20d'un%20projet%20pour%20mon%20entreprise." target="_blank" rel="noopener noreferrer" class="contact-channel-item whatsapp-cta-channel">
+                  <div class="channel-icon-box whatsapp" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Échanger sur WhatsApp</span>
+                    <span class="channel-value">+242 06 000 00 00 • Réponse rapide</span>
+                  </div>
+                </a>
+
+                <a href="mailto:contact@zamu-consulting.cg" class="contact-channel-item">
+                  <div class="channel-icon-box email" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Courriel professionnel</span>
+                    <span class="channel-value">contact@zamu-consulting.cg</span>
+                  </div>
+                </a>
+
+                <div class="contact-channel-item static">
+                  <div class="channel-icon-box location" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Localisation</span>
+                    <span class="channel-value">Brazzaville & Pointe-Noire, République du Congo</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="sla-note-box">
+                <div class="sla-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="sla-text">
+                  <strong>Engagement de réactivité :</strong> Réponse garantie sous 24h ouvrées. Vos données sont protégées par accord de confidentialité.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Colonne Droite : Formulaire complet interactif -->
+          <div class="contact-form-col">
+            <div class="form-container-card card-glow">
+              <h3 class="form-title">Demander une consultation gratuite</h3>
+              <p class="form-subtitle">Décrivez succinctement votre activité et vos défis opérationnels actuels.</p>
+
+              <form class="main-contact-form" id="full-contact-form" novalidate>
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="contact-fullname">Nom et Prénom <span class="required">*</span></label>
+                    <input type="text" id="contact-fullname" name="fullname" required placeholder="Ex. Jean Moukoko" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-org">Entreprise / Organisation <span class="required">*</span></label>
+                    <input type="text" id="contact-org" name="organization" required placeholder="Ex. Congo Distribution SARL" class="form-input">
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-group">
+                    <label for="contact-email">Email professionnel <span class="required">*</span></label>
+                    <input type="email" id="contact-email" name="email" required placeholder="jean.moukoko@entreprise.cg" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-phone">Numéro WhatsApp / Téléphone</label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="+242 06 123 45 67" class="form-input">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject">Domaine prioritaire de votre démarche <span class="required">*</span></label>
+                  <select id="contact-subject" name="subject" required class="form-input form-select">
+                    <option value="" disabled selected>Sélectionnez votre besoin principal...</option>
+                    <option value="advisory">Conseil & Diagnostic IA (ZAMU AI Advisory)</option>
+                    <option value="automation">Automatisation de processus & documents (ZAMU Automation)</option>
+                    <option value="digital">Développement d'application / logiciel métier (ZAMU Digital Solutions)</option>
+                    <option value="ventures">Projet d'innovation / R&D (ZAMU Ventures)</option>
+                    <option value="autre">Autre demande spécifique</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-description">Décrivez votre processus ou votre besoin <span class="required">*</span></label>
+                  <textarea id="contact-description" name="message" rows="4" required placeholder="Ex. Nous perdons beaucoup de temps à ressaisir nos factures fournisseurs et à relancer manuellement nos clients pour les paiements..." class="form-input"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-submit-full" id="submit-btn-full">
+                  <span>Envoyer ma demande d'échange</span>
+                  <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </button>
+
+                <div class="form-feedback-message" id="form-feedback" hidden aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 10 : PIED DE PAGE (FOOTER)
+         ======================================================================= -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-container">
+        
+        <div class="footer-top-grid">
+          
+          <!-- Colonne 1 : Marque & Présentation -->
+          <div class="footer-col brand-col">
+            <a href="#hero" class="brand-logo" aria-label="ZAMU IA Consulting">
+              <div class="logo-mark" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="34" height="34" rx="8" fill="#171717" stroke="rgba(239, 239, 239, 0.15)"/>
+                  <path d="M9 10H25L13 24H25" stroke="#3670FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="23" cy="11" r="2.5" fill="#F9D601"/>
+                </svg>
+              </div>
+              <div class="logo-text-group">
+                <span class="logo-title">ZAMU IA</span>
+                <span class="logo-subtitle">CONSULTING</span>
+              </div>
+            </a>
+            <p class="footer-brand-desc">
+              Entreprise technologique hybride dédiée à la transformation numérique, à l'automatisation des opérations et au développement de solutions d'IA utiles au Congo-Brazzaville et en Afrique francophone.
+            </p>
+            <p class="footer-location">
+              Brazzaville & Pointe-Noire • République du Congo
+            </p>
+          </div>
+
+          <!-- Colonne 2 : Navigation Rapide -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero" class="footer-link">Accueil</a></li>
+              <li><a href="#a-propos" class="footer-link">À propos de ZAMU</a></li>
+              <li><a href="#expertises" class="footer-link">Nos 4 Domaines d'Expertise</a></li>
+              <li><a href="#demonstrations" class="footer-link">Prototypes & Démonstrations</a></li>
+              <li><a href="#methode" class="footer-link">Notre Méthode de Travail</a></li>
+              <li><a href="#clients" class="footer-link">À qui nous nous adressons</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Les Pôles ZAMU -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Pôles d'Activités</h4>
+            <ul class="footer-links-list">
+              <li><a href="#expertises" class="footer-link">ZAMU AI Advisory</a></li>
+              <li><a href="#expertises" class="footer-link">ZAMU Automation</a></li>
+              <li><a href="#expertises" class="footer-link">ZAMU Digital Solutions</a></li>
+              <li><a href="#expertises" class="footer-link">ZAMU Ventures</a></li>
+              <li><a href="#pourquoi-nous" class="footer-link">Nos Engagements Qualité</a></li>
+              <li><a href="#faq" class="footer-link">Questions Fréquentes (FAQ)</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 4 : Contact & Légal -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact Professionnel</h4>
+            <ul class="footer-links-list contact-list">
+              <li>
+                <span class="footer-contact-label">Email :</span>
+                <a href="mailto:contact@zamu-consulting.cg" class="footer-link">contact@zamu-consulting.cg</a>
+              </li>
+              <li>
+                <span class="footer-contact-label">WhatsApp :</span>
+                <a href="https://wa.me/242060000000" target="_blank" rel="noopener noreferrer" class="footer-link">+242 06 000 00 00</a>
+              </li>
+              <li>
+                <span class="footer-contact-label">Siège :</span>
+                <span class="footer-contact-text">Brazzaville, République du Congo</span>
+              </li>
+            </ul>
+            <div class="footer-cta-box">
+              <a href="#contact" class="btn btn-outline btn-sm footer-cta-btn">Demander un diagnostic</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ligne Inférieure Copyright & Légal -->
+        <div class="footer-bottom-bar">
+          <p class="copyright-text">
+            © 2026 ZAMU IA Consulting. Tous droits réservés. Conçu selon les standards d'ingénierie logicielle et de sécurité les plus stricts.
+          </p>
+          <div class="legal-links">
+            <button type="button" class="legal-link-btn" id="open-legal-btn">Mentions Légales</button>
+            <span class="sep" aria-hidden="true">•</span>
+            <button type="button" class="legal-link-btn" id="open-privacy-btn">Politique de Confidentialité</button>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </main>
+
+  <!-- =========================================================================
+       MODALE DE DÉMONSTRATION INTERACTIVE (PROTOTYPE SIMULATOR)
+       ========================================================================= -->
+  <div class="demo-interactive-modal" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title" hidden>
+    <div class="modal-backdrop" id="demo-backdrop"></div>
+    <div class="modal-dialog demo-modal-dialog">
+      <button type="button" class="modal-close" id="demo-modal-close" aria-label="Fermer la démonstration">✕</button>
+      
+      <div class="demo-modal-header">
+        <span class="demo-modal-category" id="demo-modal-category">Simulation fonctionnelle</span>
+        <h3 id="demo-modal-title" class="demo-modal-heading">Démonstration DocuMind IA</h3>
+        <p id="demo-modal-desc" class="demo-modal-sub">
+          Testez l'extraction multimodale en temps réel à partir d'un échantillon de document commercial.
+        </p>
+      </div>
+
+      <!-- Contenu interactif de la simulation -->
+      <div class="demo-simulator-stage" id="demo-simulator-stage">
+        <!-- Rempli dynamiquement par JS selon le prototype cliqué -->
+      </div>
+      
+      <div class="demo-modal-footer">
+        <p class="demo-note">Ce simulateur fonctionne sur notre moteur d'inférence interne.</p>
+        <a href="#contact" class="btn btn-primary btn-sm" id="demo-cta-btn">
+          <span>Déployer cette solution pour votre PME</span>
+          <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODALE MENTIONS LÉGALES & CONFIDENTIALITÉ
+       ========================================================================= -->
+  <div class="legal-modal" id="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" hidden>
+    <div class="modal-backdrop" id="legal-backdrop"></div>
+    <div class="modal-dialog legal-dialog">
+      <button type="button" class="modal-close" id="legal-modal-close" aria-label="Fermer la fenêtre">✕</button>
+      <div class="modal-header">
+        <h3 id="legal-modal-title" class="modal-heading">Mentions Légales & Confidentialité</h3>
+      </div>
+      <div class="legal-modal-body">
+        <h4>1. Éditeur de la plateforme</h4>
+        <p><strong>ZAMU IA Consulting</strong> — Cabinet de conseil en intelligence artificielle, automatisation des processus et ingénierie logicielle. Siège social : Brazzaville, République du Congo. Email : contact@zamu-consulting.cg.</p>
+        
+        <h4>2. Propriété intellectuelle</h4>
+        <p>L'ensemble des contenus, marques, logos, architectures techniques, prototypes et codes sources présents sur ce site sont la propriété exclusive de ZAMU IA Consulting.</p>
+
+        <h4>3. Protection des données personnelles & professionnelles</h4>
+        <p>Conformément aux normes en vigueur relatives à la protection des données et aux bonnes pratiques de cybersécurité, les informations recueillies dans nos formulaires font l'objet d'un traitement strictement confidentiel destiné exclusivement au traitement de votre demande de consultation. Aucune donnée n'est cédée ou vendue à des tiers.</p>
+        
+        <h4>4. Sécurité des prototypes & modèles</h4>
+        <p>Les démonstrations et prototypes internes présentés sur ce site sont des concepts technologiques développés par nos ingénieurs. Les flux de démonstration ne contiennent aucune donnée confidentielle client.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
